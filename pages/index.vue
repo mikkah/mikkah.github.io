@@ -1,12 +1,13 @@
 <template>
   <div class="wrapper font-body grid grid-cols-3 text-white">
-    <div class="pr-4 intro">
-      <Main/>
+    <div class="intro">
+      <Main :active-section="activeSection"/>
     </div>
-    <div class="md:col-span-2 pt-6 pb-6 pr-6 pl-6 md:pr-16 md:pl-16 content col-span-3 ">
-      <Skills class="mb-14"/>
-      <Experience class="mb-14"/>
-      <Projects />
+    <div id="main-content" class="md:col-span-2 pt-6 pb-6 pr-6 pl-6 md:pr-16 md:pl-16 content col-span-3 ">
+      <About class="mb-14" @emitVisibility="(e) => { activeSection = e }"/>
+      <Skills class="mb-14" @emitVisibility="(e) => { activeSection = e }"/>
+      <Experience class="mb-14" @emitVisibility="(e) => { activeSection = e }"/>
+      <Projects @emitVisibility="(e) => { activeSection = e }"/>
     </div>
   </div>
 </template>
@@ -14,7 +15,13 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      activeSection: 'Skills',
+    }
+  },
+})
 </script>
 
 <style lang="scss" scoped>

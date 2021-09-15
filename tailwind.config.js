@@ -15,7 +15,8 @@ module.exports = {
         darkblue: '#04040f',
         skyblue: 'rgb(75, 151, 210)',
         yellow: '#ecf51f',
-        lightgreen: 'rgb(103, 228, 151)'
+        lightgreen: 'rgb(103, 228, 151)',
+        paleBlue: '#323256'
       },
       fontFamily: {
         body: ['Mulish']

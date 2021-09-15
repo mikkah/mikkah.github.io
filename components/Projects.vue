@@ -1,11 +1,19 @@
 <template>
   <div class="projects-container">
-    <h1 class="text-2xl mb-8 tracking-wider">Projects I've worked on</h1>
-    <div class="project-lists grid grid-cols-2 gap-8">
-      <div v-for="(proj, key) in projects" :key="key" class="card shadow-md justify-between inline-block rounded-md overflow-hidden bg-darkblue w-full project">
+    <h1 v-observe-visibility="{
+        callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'Projects'),
+        throttle: 1,
+        rootMargin: '-20px',
+        intersection: {
+          threshold: 1
+        },
+      }" class="text-2xl mb-8 tracking-wider">Projects I've worked on</h1>
+    <div class="project-lists grid grid-cols-2 gap-10 mb-16">
+      <div v-for="(proj, key) in projects" :key="key" class="card shadow-md justify-between inline-block rounded-md overflow-hidden bg-paleBlue w-full project">
         <div class="header p-4">
           <p class="text-lightblue font-bold tracking-wider text-2xl mb-2">{{ proj.name }}</p>
-          <p class="text-sm">{{ proj.description }}</p>
+          <p class="text-sm mt-2">{{ proj.description }}</p>
+          <a class="text-sm mt-2 link" :href="proj.link" target="blank">{{ proj.link }}</a>
         </div>
         <div :class="`image-footer ${proj.bg} p-2 flex items-center`">
           <img :class="`img-${proj.img}`" :src="loadSvg(proj.img)" />
@@ -77,6 +85,11 @@
   flex-direction: column;
   &:hover {
     transform: scale(1.1)
+  }
+  .link {
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .image-footer {
     height: 50px;

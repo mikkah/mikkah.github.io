@@ -1,8 +1,15 @@
 <template>
   <div class="experience-container">
-    <h1 class="text-2xl mb-5 tracking-wider">Experience</h1>
+    <h1 v-observe-visibility="{
+        callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'Experience'),
+        throttle: 1,
+        rootMargin: '-20px',
+        intersection: {
+          threshold: 1
+        },
+      }" class="text-2xl mb-5 tracking-wider">Experience</h1>
     <div class="job-lists">
-      <div v-for="(job, key) in jobs" :key="key" class="job p-5 rounded-md mb-8 bg-darkblue">
+      <div v-for="(job, key) in jobs" :key="key" class="job p-5 rounded-md mb-8 bg-paleBlue">
         <div class="title text-lg mb-1">{{ job.company }}</div>
         <div class="company text-2xl font-bold mb-1 text-lightblue">{{ job.title }}</div>
 
@@ -34,7 +41,7 @@
             dateEnd: 'Present',
             descriptions: [
               'Work closely with Product Managers, QA Team and Design Team to developed different software products',
-              'Participate/Lead scrum sessions',
+              'Participate/Lead scrum sessions and sprint planning',
               'Review product requirements, specifications and design documents to provide accurate feedback for the product development',
               'Performed code reviews, participated in refinements meetings'
             ]
@@ -64,8 +71,7 @@
           }
         ]
       }
-    }
-    
+    },
   })
 </script>
 
