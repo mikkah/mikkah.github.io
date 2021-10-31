@@ -1,5 +1,5 @@
 <template>
-  <div class="projects-container">
+  <div class="projects-container mt-9">
     <h1 v-observe-visibility="{
         callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'Projects'),
         throttle: 1,
@@ -30,38 +30,38 @@
     data() {
       return {
         projects: [
-          { name: 'QSpace App', 
-            description: 'Express JS • Vue JS • Vuex • PostgreSQL • Bootstrap', 
-            link: 'https://www.qspaceapp.com', 
+          { name: 'QSpace App',
+            description: 'Express JS • Vue JS • Vuex • PostgreSQL • Bootstrap',
+            link: 'https://www.qspaceapp.com',
             img: 'qspace',
             bg: 'bg-white'
           },
-          { name: 'QTime App', 
-            description: 'Laravel • Vue JS • Vuex • PostgreSQL • Bootstrap', 
+          { name: 'QTime App',
+            description: 'Laravel • Vue JS • Vuex • PostgreSQL • Bootstrap',
             link: 'https://www.qtimesoftware.com',
             img: 'qtime',
             bg: 'bg-white'
           },
-          { name: 'Loft PH', 
-            description: 'Express JS • Vue JS • MongoDB • Bootstrap', 
+          { name: 'Loft PH',
+            description: 'Express JS • Vue JS • MongoDB • Bootstrap',
             link: 'https://www.loft.ph',
-            img: 'loft', 
+            img: 'loft',
             bg: 'bg-skyblue'
           },
-          { name: 'Real PH', 
-            description: 'Laravel • MySQL • Bootstrap', 
+          { name: 'Real PH',
+            description: 'Laravel • MySQL • Bootstrap',
             link: 'https://www.real.ph',
             img: 'realph',
             bg: 'bg-lightgreen'
           },
-          { name: 'Eats.Ph', 
-            description: 'NEST JS • NEXT JS • Redux Saga • Thunk • PostgreSQL • Bootstrap', 
+          { name: 'Eats.Ph',
+            description: 'NEST JS • NEXT JS • Redux Saga • Thunk • PostgreSQL • Bootstrap',
             link: 'https://www.eats.ph',
             img: 'eatsph',
             bg: 'bg-lightgreen'
           },
-          { name: 'CoworkerHQ', 
-            description: 'NEST JS • NEXT JS • Redux Saga • Thunk • PostgreSQL • Bootstrap', 
+          { name: 'CoworkerHQ',
+            description: 'NEST JS • NEXT JS • Redux Saga • Thunk • PostgreSQL • Bootstrap',
             link: 'https://www.cowokerhq.com',
             img: 'coworkerhq',
             bg: 'bg-yellow'

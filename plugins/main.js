@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import { ObserveVisibility } from 'vue-observe-visibility'
 
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
+
 Vue.directive('observe-visibility', ObserveVisibility)
+
 
 const mixin = {
   methods: {
@@ -9,6 +13,11 @@ const mixin = {
       if(isVisible) {
         this.$emit('emitVisibility', navigation)
       }
+    },
+    scrollTo(div) {
+      document.querySelector('.'+div).scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   }
 }

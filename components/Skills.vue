@@ -1,5 +1,5 @@
 <template>
-  <div class="skills-container">
+  <div class="skills-container mt-9">
     <h1 v-observe-visibility="{
         callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'Skills'),
         throttle: 1,
@@ -54,7 +54,7 @@
         return require(`~/assets/icons/${icon}.svg`)
       }
     },
-    
+
   })
 </script>
 

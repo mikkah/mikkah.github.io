@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-container">
+  <div class="experience-container mt-9">
     <h1 v-observe-visibility="{
         callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'Experience'),
         throttle: 1,
@@ -19,7 +19,7 @@
             <li v-for="(desc, i) in job.descriptions" :key="i" class="pb-3">
               {{ desc }}
             </li>
-           
+
           </ul>
         </div>
       </div>
