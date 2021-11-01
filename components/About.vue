@@ -1,13 +1,6 @@
 <template>
   <div class="about-container">
-    <h1 v-observe-visibility="{
-        callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'About'),
-        throttle: 1,
-        rootMargin: '-20px',
-        intersection: {
-          threshold: 1
-        },
-      }" class="text-2xl mb-5 tracking-wider">About</h1>
+    <h1 class="text-2xl mb-5 tracking-wider">About</h1>
     <div class="about-content">
       <p class="text-center italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

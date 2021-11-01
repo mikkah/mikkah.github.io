@@ -1,13 +1,6 @@
 <template>
   <div class="projects-container mt-9">
-    <h1 v-observe-visibility="{
-        callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'Projects'),
-        throttle: 1,
-        rootMargin: '-20px',
-        intersection: {
-          threshold: 1
-        },
-      }" class="text-2xl mb-8 tracking-wider">Projects I've worked on</h1>
+    <h1  class="text-2xl mb-8 tracking-wider">Projects I've worked on</h1>
     <div class="project-lists grid grid-cols-2 gap-10 mb-16">
       <div v-for="(proj, key) in projects" :key="key" class="card shadow-md justify-between inline-block rounded-md overflow-hidden bg-paleBlue w-full project">
         <div class="header p-4">

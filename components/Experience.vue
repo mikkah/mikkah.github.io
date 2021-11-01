@@ -1,13 +1,6 @@
 <template>
   <div class="experience-container mt-9">
-    <h1 v-observe-visibility="{
-        callback: (isVisible, entry) => visibilityChanged(isVisible, entry, 'Experience'),
-        throttle: 1,
-        rootMargin: '-20px',
-        intersection: {
-          threshold: 1
-        },
-      }" class="text-2xl mb-5 tracking-wider">Experience</h1>
+    <h1 class="text-2xl mb-5 tracking-wider">Experience</h1>
     <div class="job-lists">
       <div v-for="(job, key) in jobs" :key="key" class="job p-5 rounded-md mb-8 bg-paleBlue">
         <div class="title text-lg mb-1">{{ job.company }}</div>

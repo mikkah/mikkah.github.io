@@ -2,6 +2,8 @@ import Vue from 'vue'
 import { ObserveVisibility } from 'vue-observe-visibility'
 
 import VueParticles from 'vue-particles'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
 Vue.use(VueParticles)
 
 Vue.directive('observe-visibility', ObserveVisibility)

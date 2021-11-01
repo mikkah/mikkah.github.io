@@ -7,8 +7,8 @@
       <div class="title pr-4 text-center">
 
         <div class="flex name justify-center">
-          <h1 class="fname tracking-widest mr-5">Mikhael</h1>
-          <h1 class="lname tracking-widest">
+          <h1 class="fname tracking-widest mr-5 font-medium">Mikhael</h1>
+          <h1 class="lname tracking-widest font-medium">
             <span>Oriel</span>
           </h1>
         </div>
@@ -30,12 +30,7 @@
   import Vue from 'vue'
 
   export default Vue.extend({
-    props: {
-      activeSection: {
-        type: String,
-        required: true
-      }
-    },
+
     data() {
       return {
         jobTitle: 'Software Engineer',
@@ -107,10 +102,9 @@
     display:inline-flexbox;
   }
   .learn-more {
-     animation: showup 7s ease-in;
-      padding-bottom: 8px;
-
-
+    display: inline-block;
+    animation: showup 7s ease-in;
+    padding-bottom: 8px;
     &:hover {
       display: inline-block;
       padding-bottom: 8px;

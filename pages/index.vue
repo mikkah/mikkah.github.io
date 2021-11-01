@@ -5,9 +5,9 @@
       <Main />
       <div class="details px-44">
       <!-- <About class="mb-14" @emitVisibility="(e) => { activeSection = e }"/> -->
-      <Skills class="mb-14" @emitVisibility="(e) => { activeSection = e }"/>
-      <Experience class="mb-14" @emitVisibility="(e) => { activeSection = e }"/>
-      <Projects @emitVisibility="(e) => { activeSection = e }"/>
+      <Skills class="mb-14"/>
+      <Experience class="mb-14"/>
+      <Projects/>
 
       </div>
     </div>
