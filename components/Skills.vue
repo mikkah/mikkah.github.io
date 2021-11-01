@@ -2,7 +2,7 @@
   <div class="skills-container mt-9">
     <h1 class="text-2xl mb-5 tracking-wider">Skills</h1>
     <div class="skills-list content-center flex flex-wrap justify-center">
-      <div v-for="(skill,i) in skills" :key="i" class="skill mb-14 mx-6 bg-darkblue p-5 rounded-3xl flex flex-col justify-center text-center zoom">
+      <div v-for="(skill,i) in skills" :key="i" class="skill mb-14 mx-3 bg-darkblue p-5 rounded-lg flex flex-col  text-center zoom">
         <img class="h-16" :src="loadSvg(skill.icon)" />
         <p class="mt-2 text-sm">{{ skill.text }}</p>
       </div>
@@ -60,14 +60,27 @@
 
 <style lang="scss" scoped>
 .skills-container {
-  height: 100vh;
-
+  height: auto;
 }
 .skill {
+  width: 150px;
   transition: transform 0.2s;
   &:hover {
     transform: scale(1.3)
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .skills-container {
+    height: auto;
+    .skill {
+      height: 90px;
+      width: 90px;
+      margin: 10px;
+      img{
+        height: 40px;
+      }
+    }
+  }
+}
 </style>

@@ -3,7 +3,7 @@
 
     <div id="main-content" class="content">
       <Main />
-      <div class="details px-44">
+      <div class="details px-20">
       <!-- <About class="mb-14" @emitVisibility="(e) => { activeSection = e }"/> -->
       <Skills class="mb-14"/>
       <Experience class="mb-14"/>

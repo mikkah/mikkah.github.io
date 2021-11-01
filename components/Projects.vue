@@ -104,4 +104,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 890px) {
+  .project-lists {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
 </style>

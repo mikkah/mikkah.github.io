@@ -70,5 +70,8 @@ export default {
     configPath: 'tailwind.config.js',
     exposeConfig: true,
     config: {}
+  },
+  server: {
+    host: "0.0.0.0"
   }
 }
