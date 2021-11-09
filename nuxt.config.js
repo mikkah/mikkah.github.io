@@ -13,8 +13,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: `Mikhael Oriel | Site` },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og:title', name: 'og:title', content: `Mikhael | Site | Portolio` },
-      { hid: 'og:description', name: 'og:description', content: `Mikhael Oriel | Site | Portolio` },
+      { hid: 'og:title', name: 'og:title', content: `Mikhael | Site | Portfolio` },
+      { hid: 'og:description', name: 'og:description', content: `Mikhael Oriel | Site | Portfolio` },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
