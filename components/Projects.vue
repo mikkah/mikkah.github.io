@@ -8,7 +8,7 @@
           <p class="text-sm mt-2">{{ proj.description }}</p>
           <a class="text-sm mt-2 link" :href="proj.link" target="blank">{{ proj.link }}</a>
         </div>
-        <div :class="`image-footer ${proj.bg} p-2 flex items-center`">
+        <div :class="`image-footer ${proj.bg} p-2 flex items-center`" @click="() => redirect(proj.link)">
           <img :class="`img-${proj.img}`" :src="loadSvg(proj.img)" />
         </div>
       </div>
@@ -65,6 +65,12 @@
     methods: {
       loadSvg(icon: String) {
         return require(`~/assets/projects/${icon}.svg`)
+      },
+      redirect(link: String) {
+        window.open(
+        link as string,
+        '_blank' // <- This is what makes it open in a new window.
+      );
       }
     }
   })
@@ -85,6 +91,7 @@
     }
   }
   .image-footer {
+    cursor: pointer;
     height: 50px;
     img {
         height: 50px;

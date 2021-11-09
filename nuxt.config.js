@@ -7,12 +7,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Mikhael Oriel | Site',
+    title: 'Mikhael | Site',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: `Mikhael Oriel | Site` },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:title', name: 'og:title', content: `Mikhael | Site | Portolio` },
+      { hid: 'og:description', name: 'og:description', content: `Mikhael Oriel | Site | Portolio` },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
