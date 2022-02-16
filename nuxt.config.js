@@ -58,8 +58,25 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon: {
+      source: '/assets/favicon_io/android-chrome-512x512.png',
+      fileName: 'favicon.ico',
+      sizes: [64, 120, 144, 152, 192, 384, 512],
+      purpose: 'any'
+    },
     manifest: {
-      lang: 'en'
+      name: "Mikhael Site",
+      short_name: "Mikka",
+      lang: 'en',
+      theme_color:"#141347",
+      background_color:"#141347",
+      display:"standalone",
+      start_url: "/"
+    },
+    meta: {
+      mobileApp: true,
+      appleStatusBarStyle: 'black',
+      favicon: true
     }
   },
 
