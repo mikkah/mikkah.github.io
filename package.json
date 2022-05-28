@@ -1,6 +1,6 @@
 {
-  "name": "Portfolio",
-  "version": "1.0.0",
+  "name": "MikkaPortfolio",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -22,7 +22,8 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
-    "vue-observe-visibility": "^1.0.0"
+    "vue-observe-visibility": "^1.0.0",
+    "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

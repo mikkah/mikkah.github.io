@@ -6,8 +6,8 @@
       <div class="details px-20">
       <!-- <About class="mb-14" @emitVisibility="(e) => { activeSection = e }"/> -->
       <Skills class="mb-14"/>
-      <Experience class="mb-14"/>
       <Projects/>
+      <Experience class="mb-14"/>
 
       </div>
     </div>
