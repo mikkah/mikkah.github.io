@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="flex justify-center">
-      <button class="text-3xl animate-bounce" @click="scrollTo('experience-container')">
+      <button class="text-3xl animate-bounce" @click="scrollTo('projects-container')">
        <i class="fas fa-arrow-circle-down"></i>
       </button>
     </div>
