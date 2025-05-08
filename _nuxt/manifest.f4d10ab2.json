@@ -1,7 +1,6 @@
 {
   "name": "Mikhael Site",
   "short_name": "Mikka",
-  "description": "## Build Setup",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.7cb584.png",
