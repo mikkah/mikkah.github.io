@@ -6,7 +6,7 @@
         <div class="title text-lg mb-1">{{ job.company }}</div>
         <div class="company text-2xl font-bold mb-1 text-lightblue">{{ job.title }}</div>
 
-        <div class=" uppercase">{{ job.dateStart }} &mdash; {{ job.dateEnd }}</div>
+        <!-- <div class=" uppercase">{{ job.dateStart }} &mdash; {{ job.dateEnd }}</div> -->
         <div class="job-descriptions pt-6">
           <ul class="list-disc pl-4">
             <li v-for="(desc, i) in job.descriptions" :key="i" class="pb-3">
@@ -28,7 +28,20 @@
     data() {
       return {
         jobs: [
-          { title: 'Software Engineer',
+          {
+            title: 'Software Engineer - Senior Frontend Dev',
+            company: 'Old St. Labs',
+            dateStart: 'January 1, 2020',
+            dateEnd: 'Present',
+            descriptions: [
+              'Work closely with Project Managers, QA and Design Team to developed different software products',
+              'Participate scrum sessions and sprint planning',
+              'Develop different software products using modern frontend technologies like React, Vue, Nuxt, Next, Nest, NX, Tailwind CSS, etc.',
+              'Review product requirements, specifications and design documents to provide accurate feedback for the product development',
+              'Performed code reviews, participated in refinements meetings'
+            ]
+          },
+          { title: 'Software Engineer - Subject Matter Expert',
             company: 'Oqulo, August 99 Inc.',
             dateStart: 'January 1, 2020',
             dateEnd: 'Present',

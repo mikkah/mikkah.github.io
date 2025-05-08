@@ -122,6 +122,30 @@
             img: 'iorthotics-preview.png',
             bg: 'bg-yellow'
           },
+          { name: 'SafeInit Website',
+            description: 'Next JS • Typescript • Tailwind',
+            link: 'https://safeinit.com',
+            img: 'safeinit-preview.png',
+            bg: 'bg-white'
+          },
+          { name: 'FluxHQ Web-app',
+            description: 'Next JS • Typescript • NX Framework • Tailwind',
+            link: 'https://www.releasetechnology.co.uk/auth/login',
+            img: 'fluxhqapp-preview.png',
+            bg: 'bg-white'
+          },
+          { name: 'Standard Plus Digital',
+            description: 'Next JS • Typescript • NX Framework • Tailwind',
+            link: 'https://digital2.standardsplus.org',
+            img: 'standardplus-preview.png',
+            bg: 'bg-white'
+          },
+          { name: 'EastCare App',
+            description: 'Vue JS • Vuex • NX Framework • Tailwind',
+            link: 'https://eastcare.app',
+            img: 'eastcare-preview.png',
+            bg: 'bg-white'
+          },
         ]
       }
     },
